@@ -1,0 +1,142 @@
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.logo {
+  margin-bottom: 5%;
+}
+
+h1 {
+  margin: 1%;
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 4%;
+  font-size: 1rem;
+}
+
+.content h1 span {
+  font-weight: 300;
+  color: var(--Gray);
+}
+
+.form-container {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type="email"] {
+  padding: 3% 4%;
+  border-radius: 30px;
+  border: 1px solid var(--Pale-Blue);
+  width: 65%;
+  outline: none;
+}
+::placeholder {
+  color: var(--Pale-Blue);
+}
+
+input[type="submit"] {
+  background-color: var(--Blue);
+  color: white;
+  width: 30%;
+  padding: 3%;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--Pale-Blue);
+}
+
+.social-media {
+  color: var(--Blue);
+  margin-bottom: 5%;
+}
+
+.social-media ion-icon {
+  font-size: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+img {
+  margin-bottom: 10%;
+}
+
+.copyright {
+  color: var(--Gray);
+  font-size: 1rem;
+}
+@media screen and (max-width: 900px) {
+  .content {
+    width: 105%;
+  }
+
+  .container {
+    padding: 6% 2%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input[type="email"],
+  input[type="submit"] {
+    width: 90%;
+    margin-bottom: 2%;
+  }
+
+  input[type="submit"]{
+    margin-bottom: 15%;
+  }
+}
